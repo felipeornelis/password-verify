@@ -1,4 +1,4 @@
-interface Rule {
+export interface Rule {
     rule: string;
     value: number;
 }
