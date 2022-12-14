@@ -3,7 +3,9 @@
 Uma nobre ferramenta que avalia a força da sua senha de forma simples dadas algumas regras possíveis.
 
 ## As regras
-Abaixo seguem as regras possíveis para validação da força da senha. Não é necessário utilizar todas. Inclusive, é possível não utilizar nenhuma. Todas as regras aceitam um número inteiro como valor.
+Abaixo seguem as regras possíveis para validação da força da senha. Não é necessário utilizar todas. Inclusive, é possível não utilizar nenhuma (mas ai nada será validado). Todas as regras aceitam um número inteiro como valor. 
+
+À exceção da regra `minSize`, todas as outras validações foram feitas utilizando [expressões regulares](https://en.wikipedia.org/wiki/Regular_expression).
 
 | Regra           | Descrição                                                      |
 |-----------------|----------------------------------------------------------------|
@@ -14,10 +16,13 @@ Abaixo seguem as regras possíveis para validação da força da senha. Não é 
 | minSpecialChars | Quantidade mínima de caracteres especiais (!@#$%^&*()-+\/{}[]) |
 | noRepeated      | Repetição de caracteres em sequência                           |
 
+## Requisitos para rodar a aplicação
+- Docker ^20.10.21
 
 ## Executar a aplicação
 Execute o seguinte comando para subir um container da aplicação
 ```sh
+
 docker compose up
 ```
 
@@ -69,9 +74,8 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
 - [Express](https://expressjs.com/)
 - [GraphQL](https://graphql.org/)
-- [Dotenv](https://www.npmjs.com/package/dotenv)
 - [Express async errors](https://www.npmjs.com/package/express-async-errors)
 - [Docker](https://www.docker.com/)
 
 ## Licença
- MIT
+[MIT](https://opensource.org/licenses/MIT)
