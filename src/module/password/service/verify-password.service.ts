@@ -1,5 +1,5 @@
 import { parseRules, Rule } from "../../../utils/parse-rules";
-import { Password } from "../password.entity";
+import { Password } from "../domain/password.entity";
 
 export class VerifyPasswordService {
     async execute(password: string, rules: Rule[]) {

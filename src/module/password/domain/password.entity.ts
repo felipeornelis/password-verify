@@ -1,4 +1,4 @@
-import { errors } from "./password.errors";
+import { errors } from "../errors/password.errors";
 
 export interface PasswordRules {
     minSize: number;
